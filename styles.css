@@ -11,6 +11,7 @@ body {
     background: linear-gradient(var(--main), var(--accent));
     color: #ffffff;
     font-family: var(--body-font);
+    max-width: 100%;
 }
 
 .gradient-text {
@@ -116,7 +117,6 @@ h1 {
     column-gap: 3rem;
     max-width: 1200px;
     transition: max-width 250ms ease;
-    width: 100%;
     margin: 0 auto;
 }
 
