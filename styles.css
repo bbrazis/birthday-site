@@ -114,6 +114,10 @@ h1 {
     align-items: center;
     padding: 3rem 6rem;
     column-gap: 3rem;
+    max-width: 1200px;
+    transition: max-width 250ms ease;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header-left,
@@ -192,13 +196,31 @@ a {
 @media screen and (min-width: 1440px) {
     #header {
         max-width: 1440px;
-        margin: 0 auto;
         padding: 6rem;
     }
-    #hero-imag-wrap {
+    #hero-img-wrap {
         max-width: 600px;
     }
     h1 {
         font-size: 4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header {
+        flex-wrap: wrap;
+    }
+    .header-left,
+    .header-right {
+        text-align: center;
+        align-items: center;
+    }
+    #hero-img-wrap {
+        margin: 0;
+        max-width: 300px;
+        width: 100%;
+    }
+    h1 {
+        max-width: none;
+        font-size: 2rem;
     }
 }
