@@ -1,0 +1,201 @@
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Inter', sans-serif;
+    --main: #000000;
+    --accent: green;
+    --alternate: red;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(var(--main), var(--accent));
+    color: #ffffff;
+    font-family: var(--body-font);
+}
+
+.gradient-text {
+    background: linear-gradient( -60deg,
+        var(--accent),
+        var(--accent),
+        var(--alternate),
+        var(--alternate)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: 0 0;
+    background-size: 300%;
+}
+
+.gradient-text:hover {
+    animation: grad-shift 10s ease-in-out infinite;
+}
+
+@keyframes grad-shift {
+    0%, 100% { background-position: 0 0 }
+    50% { background-position: 100% 0 }
+}
+
+ul {
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: 2.4rem;
+    max-width: 12ch;
+    text-align: left;
+}
+
+#hero-img-wrap {
+    padding: .25rem;
+    background-color: var(--accent);
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10%;
+    margin-left: auto;
+}
+
+#hero-img-wrap:hover #hero-img {
+    filter: saturate(1);
+}
+
+#hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    display: block;
+    filter: saturate(.5);
+    transition: filter 250ms ease;
+}
+
+.age-box {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    background: var(--accent);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    column-gap: 1rem;
+    font-family: var(--body-font);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#bday-age {
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: unset;
+}
+
+#bday-date {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: unset;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 2rem;
+    column-gap: 3rem;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header-left {
+    width: 100%;
+}
+
+.header-right {
+    width: 100%;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-hug {
+    height: 230px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-whoohoo:hover {
+    background-image: url("images/whoohoo.gif");
+}
+
+#gift-img-smile:hover {
+    background-image: url("images/smile.gif");
+}
+
+#gift-img-hotwheels:hover {
+    background-image: url("images/hot-wheels.gif");
+}
+
+#gift-img-you:hover {
+    background-image: url("images/you.gif");
+}
+
+#gift-img-hug:hover {
+    background-image: url("images/hug.gif");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+
+/* 
+Add the footer paragraph according to the design. 
+Configure the anchor tag to open the link in a new tab.
+Forgotten how to do it? Google it! 
+
+Link: 
+https://scrimba.com/learn/htmlandcss
+
+Text:
+Want to create your own Birthday GIFt site? Take this HTML & CSS course.
+*/
