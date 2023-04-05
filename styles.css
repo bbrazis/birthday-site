@@ -62,7 +62,7 @@ h1 {
     background-color: var(--accent);
     width: 100%;
     max-width: 350px;
-    border-radius: 10%;
+    border-radius: 50%;
     margin-left: auto;
     transition: max-width 600ms ease;
 }
@@ -156,8 +156,12 @@ h1 {
 
 .gift-img {
     margin: 20px auto;
-    max-width: 400px;
-    height: 400px;
+    min-width: 400px;
+    width: 40vw;
+    max-width: 600px;
+    min-height: 400px;
+    height: 40vw;
+    max-height: 600px;
     border: 6px solid white;
     border-radius: 10px;
     background-image: url("images/gift-cover.jpg");
