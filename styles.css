@@ -116,6 +116,7 @@ h1 {
     align-items: center;
     padding: 3rem 6rem;
     column-gap: 3rem;
+    row-gap: 3rem;
     max-width: 1200px;
     transition: max-width 250ms ease;
     margin: 0 auto;
